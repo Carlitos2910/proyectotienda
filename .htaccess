@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+
+    # Activar rewrite.
+    RewriteEngine on
+    Options All -Indexes
+    Options -MultiViews
+
+    
+    # En caso de escribir no es un controlador sino una carpeta/fichero, no aplica esta regla.
+    RewriteCond %{SCRIPT_FILENAME} !-f
+
+    # RewriteRule ^(.*)/(.*) index.php?controller=$1&action=$2
+    RewriteRule ^ index.php [QSA,L]
+
+</IfModule>

@@ -1,0 +1,50 @@
+
+/* CSS PARA LAS OPCIONES DE SESION Y LINKS */
+.opciones-sesion{
+    margin: auto;
+}
+.opciones-sesion li{
+    display: inline;
+}
+a{
+    text-decoration: none;
+}
+
+/* CSS PARA EL CARRITO */
+.opciones-cesta{
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+}
+.opciones-cesta li{
+    list-style: none;
+}
+
+
+/* CSS PARA MIS PEDIDOS */
+.order-item{
+    max-width: 80%;
+    margin: auto;
+    display: block;
+    margin-top: 16px;
+    padding: 0 24px 16px;
+    border: 1px solid #e5e5e5;
+}
+.order-item-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.order-item-content{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.order-item-content img{
+    margin-right: 150px;
+}

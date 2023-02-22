@@ -92,8 +92,8 @@
     Router::add('GET', 'producto_editar', function(){
         require '../Views/Producto/editar.php';
     });
-    Router::add('POST', 'producto_editar/:id', function(string $id){
-        (new ProductoController())->editar($id);
+    Router::add('POST', 'producto_editar', function(){
+        (new ProductoController())->editar();
     });
 
 

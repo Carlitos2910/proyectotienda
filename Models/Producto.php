@@ -199,7 +199,6 @@
         public function editar($data): bool{
             $ins = $this->db->prepara("UPDATE productos SET categoria_id=:categoria_id, nombre=:nombre, descripcion=:descripcion, precio=:precio, stock=:stock, oferta=:oferta, fecha=:fecha, imagen=:imagen WHERE nombre = :nombre");
 
-            $ins->bindParam('id', $id);
             $ins->bindParam(':categoria_id',$data['categoria'], PDO::PARAM_STR);
             $ins->bindParam(':nombre', $data['nombre'], PDO::PARAM_STR);
             $ins->bindParam(':descripcion',$data['descripcion'], PDO::PARAM_STR);

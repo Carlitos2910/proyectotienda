@@ -66,4 +66,14 @@ CONSTRAINT fk_linea_producto FOREIGN KEY(producto_id) REFERENCES productos(id)
 )ENGINE=InnoDb DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 
+INSERT INTO `productos` (`id`, `categoria_id`, `nombre`, `descripcion`, `precio`, `stock`, `oferta`, `fecha`, `imagen`) VALUES
+(1, 4, 'Air Jordan 1', 'Air Jordan 1', 120.00, 53, NULL, '2022-12-12', 'AirJordan1.png'),
+(2, 4, 'Air Force 1', 'Air Force 1', 125.00, 25, NULL, '2022-12-12', 'AirForce1.png'),
+(3, 2, 'BetaApure', 'The Beta model is a sophisticated model for women. Its upper leather material feels so soft you would feel never take them away!', 49.99, 30, NULL, '2022-12-14', 'BetaApure.png'),
+(4, 4, 'BotasMartens', 'asd', 10.00, 10, NULL, '2023-02-22', 'BotasMartens.png');
+
+
+
+INSERT INTO `usuarios` (`id`, `nombre`, `apellidos`, `email`, `password`, `rol`) VALUES
+(1, 'admin', 'admin', 'admin@admin.es', '$2y$04$jQidN8fNQENASHiQf9avNO095/is4/2viRnUvv5PYK1m9mdiKfXdm', 'admin');
 

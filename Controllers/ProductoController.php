@@ -56,12 +56,13 @@
 
         }
 
-        public function editar($id){
+        public function editar(){
             Utils::isAdmin();
 
             $producto = new Producto();
 
-            $producto->editar($id);
+            $data = $_POST['data'];
+            $producto->editar($data);
 
             header('Location:'. $_ENV['BASE_URL']);
 
